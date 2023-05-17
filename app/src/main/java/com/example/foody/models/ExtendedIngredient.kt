@@ -1,8 +1,18 @@
 package com.example.foody.models
 
+import com.google.gson.annotations.SerializedName
+
 data class ExtendedIngredient(
-    val id: Int,
+    @SerializedName("amount")
+    val amount: Double,
+    @SerializedName("consistency")
+    val consistency: String,
+    @SerializedName("image")
     val image: String,
-    val localizedName: String,
-    val name: String
+    @SerializedName("name")
+    val name: String,
+    @SerializedName("original")
+    val original: String,
+    @SerializedName("unit")
+    val unit: String
 )
