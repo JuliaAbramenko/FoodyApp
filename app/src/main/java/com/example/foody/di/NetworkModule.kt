@@ -1,8 +1,7 @@
 package com.example.foody.di
 
-import com.example.foody.Constants
-import com.example.foody.FoodRecipesAPI
-import com.google.gson.Gson
+import com.example.foody.util.Constants
+import com.example.foody.data.network.FoodRecipesAPI
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
